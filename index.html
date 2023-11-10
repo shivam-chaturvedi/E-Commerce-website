@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple E-commerce</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #08f8d0;
+        }
+        .card{
+            margin: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header class="text-white text-center p-2" style="background-color: rgba(43, 123, 112, 0.792)">
+        <h1>Programming World E-commerce Store</h1>
+    </header>
+
+        <!-- Navigation menu -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar scroll</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Product</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">LogIn</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SignUp</a>
+                  </li>
+                  </ul>
+                <form class="d-flex" style="margin-left: 50%;" >
+                  <input class="form-control me-2"  type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" style="margin-left: 6%;">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+    <section id="products" class="container">
+        <h2 class="text-center">Products</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card" >
+                    <img src="https://img.freepik.com/premium-photo/3d-illustration-purple-retro-headphones-purple-isolated-background-white-lights-headphone-icon-illustration_116124-7777.jpg" alt="Product 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Headphones</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus soluta voluptatibus accusamus odit ut facere iusto? Recusandae, perferendis. A eius dicta nobis neque veniam, similique mollitia voluptate? Mollitia, vel tenetur molestias in non quisquam! Sunt, doloremque. Suscipit, in! Numquam elorem?</p>
+                        <button class="btn btn-primary" onclick="addToCart('Headphones')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/61RYNMc1cFL._SX679_.jpg" alt="Product 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Earbuds</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet c
+                            onsectetur, adipisicing elit. Eos repellendus nostrum harum, qui est iure tenetur exercitationem vitae incidunt nam!</p>
+                        <button class="btn btn-primary" onclick="addToCart('Earbuds')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41FG+lFGzEL._SY300_SX300_.jpg" alt="Product 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Vaccum Cleaner</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa pariatur, nihil dolorum velit dignissimos sunt blanditiis. Est velit illo ea!</p>
+                        <button class="btn btn-primary" onclick="addToCart('Vaccum Cleaner')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/31N8R9yBcJL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Ai Cleaner</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis corrupti itaque ut eum in nemo sequi consequuntur iste praesentium. Facilis quia, nesciunt consequuntur assumenda qui at dicta aut id officiis!</p>
+                        <button class="btn btn-primary" onclick="addToCart('Ai Cleaner')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/31ilq3hPhEL._SY445_SX342_QL70_FMwebp_.jpg" alt="Product 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Mac air</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam at dolores quibusdam exercitationem. Aperiam, non harum ex unde cupiditate eveniet ab voluptas rem dolor adipisci qui explicabo atque? Sapiente neque asperiores iste quis dolore repellat incidunt delectus impedit voluptate vero.</p>
+                        <button class="btn btn-primary" onclick="addToCart('Mac air')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41j6O0FtwTL._SX300_SY300_QL70_FMwebp_.jpg" alt="Product 1" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis, consectetur enim nam nulla, perspiciatis modi temporibus eligendi iste nostrum eum corrupti exercitationem autem itaque commodi aliquam delectus voluptatib</p>
+                        <button class="btn btn-primary" onclick="addToCart('Laptop')">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+            <!-- Add more product cards here -->
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cart" class="container">
+        <h2 class="text-center">Shopping Cart</h2>
+        <ul id="cart-items" class="list-group">
+            <!-- Cart items will be added here using JavaScript -->
+        </ul>
+        <button id="checkout-button" class="btn btn-primary" onclick="checkout()">Checkout</button>
+    </section>
+
+    <section id="login" class="container">
+        <h2 class="text-center">Login</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Username">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button class="btn btn-primary" onclick="login()">Login</button>
+        </form>
+    </section>
+
+    <section id="signup" class="container">
+        <h2 class="text-center">Sign Up</h2>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button class="btn btn-primary" onclick="signup()">Sign Up</button>
+        </form>
+    </section>
+
+    <footer class="text-white text-center p-2" style="background-color: rgb(5, 174, 118); margin-top: 4%;">
+        &copy; 2023 My E-commerce Store
+    </footer>
+
+    <script>
+        // JavaScript functions for cart and user authentication
+        let cart = [];
+
+        function addToCart(productId) {
+            cart.push(productId);
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartItems = document.getElementById("cart-items");
+            cartItems.innerHTML = "";
+            cart.forEach((productId) => {
+                const productItem = document.createElement("li");
+                productItem.textContent = `${productId}`;
+                productItem.classList.add("list-group-item");
+                cartItems.appendChild(productItem);
+            });
+        }
+
+        function checkout() {
+            // Implement payment processing logic here
+            alert("Payment processed successfully!");
+            cart = [];
+            updateCartDisplay();
+        }
+
+        function login() {
+            // Implement user login logic here
+            alert("User logged in successfully!");
+        }
+
+        function signup() {
+            // Implement user signup logic here
+            alert("User signed up successfully!");
+        }
+    </script>
+</body>
+</html>
